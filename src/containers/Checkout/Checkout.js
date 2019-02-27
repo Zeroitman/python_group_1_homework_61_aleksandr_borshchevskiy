@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CheckoutSummary from "../../components/CheckoutSummary/CheckoutSummary";
+import AboutFirst from "../../components/AboutFirst/AboutFirst";
 import {Route} from "react-router-dom";
 import ContactData from "./ContactData/ContactData";
 
@@ -28,7 +28,7 @@ class Checkout extends Component {
 
     render() {
         return <div>
-            <CheckoutSummary
+            <AboutFirst
                 checkoutCancelled={this.checkoutCancelledHandler}
                 checkoutContinued={this.checkoutContinuedHandler}
             />

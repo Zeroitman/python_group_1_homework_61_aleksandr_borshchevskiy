@@ -1,0 +1,11 @@
+.background_footer {
+    margin-top: 70px;
+    background: #4c7c75;
+}
+
+.text {
+    text-align: center;
+    font-size: 18px;
+    color: #e0e0e0;
+    font-weight: 600;
+}
