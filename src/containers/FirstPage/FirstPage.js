@@ -1,13 +1,25 @@
 import React, {Component} from 'react';
-import AboutFirst from "../../components/ClickResult/AboutFirst/AboutFirst";
+import ClickResult from "../../components/ClickResult/ClickResult";
+import img_1 from '../../image/first.jpg'
 
-class FirstPage extends Component {
-    checkoutCancelledHandler = () => {
-        this.props.history.goBack();
-    };
+class FirstPage extends Component {checkoutCancelledHandler = () => {this.props.history.goBack()};
 
     render() {
-        return <div><AboutFirst checkoutCancelled={this.checkoutCancelledHandler}/></div>;
+        return  <div><ClickResult
+                        name = {"Гиганотозавр"}
+                         text = {"Близкий родственник аллозавра (они до сих пор созваниваются). Впервые в научной\n" +
+                        "                литературе описан в 1995 году, т.е. спустя два года после выхода «Парка Юрского Периода» Спилберга.\n" +
+                        "                Потому и не успел пройти кастинг. Зато он сыграл главную роль в полдюжине консольных игр. Гиганотозавры,\n" +
+                        "                возможно, жили стаями. Длина их тела достигала в минуты вдохновения 15 метров — это почти как четыре\n" +
+                        "                автомобиля «Лада Калина». Интересно, сколько бы он их переваривал? Череп гиганотозавра на 40 сантиметров\n" +
+                        "                больше черепа тираннозавра! Так что в случае очной встречи исход был бы ясен. Другое дело, что по\n" +
+                        "                времени эти два ящера разминулись примерно на 30 миллионов лет. Если гигантские ящерки снова заполонят\n" +
+                        "                Землю, у россиян относительно высокие шансы выжить за счёт холодного климата (хотя Сочи и Крым придётся\n" +
+                        "                сдать, да). Однако в случае с гиганотозавром всё гораздо сквернее: ученые предполагают, что он мог быть\n" +
+                        "                теплокровным и вполне мог быть покрыт шерстью или же перьями. Так что он способен дойти и до Москвы."}
+                         checkoutCancelled={this.checkoutCancelledHandler}
+                         src = {img_1}/>
+                </div>;
     }
 }
 

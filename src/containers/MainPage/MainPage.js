@@ -1,34 +1,10 @@
 import React, {Component, Fragment} from 'react';
-import First from "../../components/Buttons/First/First"
-import Second from "../../components/Buttons/Second/Second"
-import Third from "../../components/Buttons/Third/Third"
+import Button from "../../components/Button/Button"
 
 class MainPage extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
-    successFirst = () => {
-        this.props.history.push({
-            pathname: '/page_1',
-        });
-        this.setState({purchasing: false});
-    };
-
-    successSecond = () => {
-        this.props.history.push({
-            pathname: '/page_2',
-        });
-        this.setState({purchasing: false});
-    };
-
-    successThird = () => {
-        this.props.history.push({
-            pathname: '/page_3',
-        });
-        this.setState({purchasing: false});
-    };
+    successFirst = () => {this.props.history.push({pathname: '/page_1'})};
+    successSecond = () => {this.props.history.push({pathname: '/page_2'})};
+    successThird = () => {this.props.history.push({pathname: '/page_3'})};
 
     render() {
         return <Fragment>
@@ -39,14 +15,18 @@ class MainPage extends Component {
                     вот этим списком самых опасных гигантских ящеров.</h2>
             </div>
             <div className="d-flex justify-content-around mt-4">
-                <First disabled={this.disabled} click={this.successFirst}/>
-                <Second disabled={this.disabled} click={this.successSecond}/>
-                <Third disabled={this.disabled} click={this.successThird}/>
+                <Button name={"ГИГАНТОЗАВР"} click={this.successFirst}/>
+                <Button name={"ПЛИОЗАВР"} click={this.successSecond}/>
+                <Button name={"СПИНОЗАВР"} click={this.successThird}/>
             </div>
-
         </Fragment>
     }
 }
 
-
 export default MainPage
+
+
+// constructor(props) {
+//        super(props);
+//        this.state = {};
+//    }

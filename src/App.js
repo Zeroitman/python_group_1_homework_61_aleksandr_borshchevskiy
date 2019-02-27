@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
-
 class App extends Component {
     render() {
         return (
@@ -26,7 +25,6 @@ class App extends Component {
         );
     }
 }
-
 
 export default App;
 
