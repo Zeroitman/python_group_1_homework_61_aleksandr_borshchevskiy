@@ -9,17 +9,23 @@ class MainPage extends Component {
         this.state = {};
     }
 
-    successHandler = () => {
-        // const queryParams = [];
-        // for (let i in this.state.ingredients) {
-        //     const ingredient = this.state.ingredients[i];
-        //     queryParams.push(
-        //         encodeURIComponent(i) + '=' +
-        //         encodeURIComponent(JSON.stringify(ingredient))
-        //     );
-        // }
+    successFirst = () => {
         this.props.history.push({
-            pathname: '/checkout',
+            pathname: '/page_1',
+        });
+        this.setState({purchasing: false});
+    };
+
+    successSecond = () => {
+        this.props.history.push({
+            pathname: '/page_2',
+        });
+        this.setState({purchasing: false});
+    };
+
+    successThird = () => {
+        this.props.history.push({
+            pathname: '/page_3',
         });
         this.setState({purchasing: false});
     };
@@ -33,9 +39,9 @@ class MainPage extends Component {
                     вот этим списком самых опасных гигантских ящеров.</h2>
             </div>
             <div className="d-flex justify-content-around mt-4">
-                <First disabled={this.disabled} click={this.successHandler}/>
-                <Second disabled={this.disabled} click={this.successHandler}/>
-                <Third disabled={this.disabled} click={this.successHandler}/>
+                <First disabled={this.disabled} click={this.successFirst}/>
+                <Second disabled={this.disabled} click={this.successSecond}/>
+                <Third disabled={this.disabled} click={this.successThird}/>
             </div>
 
         </Fragment>
