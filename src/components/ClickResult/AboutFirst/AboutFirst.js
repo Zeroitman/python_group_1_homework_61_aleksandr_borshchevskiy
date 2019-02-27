@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutFirst.css';
-import img_1 from '../../image/first.jpg'
+import img_1 from '../../../image/first.jpg'
 
 const AboutFirst = (props) => {
     return (

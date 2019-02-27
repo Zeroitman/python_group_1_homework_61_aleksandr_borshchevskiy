@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
+import MainPage from './containers/MainPage/MainPage'
 import Checkout from './containers/Checkout/Checkout'
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -14,7 +14,7 @@ class App extends Component {
                 <BrowserRouter>
                     <Switch>
                         <Route path="/checkout" component={Checkout}/>
-                        <Route path="/" exact component={BurgerBuilder}/>
+                        <Route path="/" exact component={MainPage}/>
                     </Switch>
                 </BrowserRouter>
                 <Footer/>

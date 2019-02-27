@@ -3,7 +3,7 @@ import First from "../../components/Buttons/First/First"
 import Second from "../../components/Buttons/Second/Second"
 import Third from "../../components/Buttons/Third/Third"
 
-class BurgerBuilder extends Component {
+class MainPage extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -43,4 +43,4 @@ class BurgerBuilder extends Component {
 }
 
 
-export default BurgerBuilder
+export default MainPage
